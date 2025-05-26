@@ -1,10 +1,9 @@
-import React, { useContext } from 'react'
-import { AppContext } from '../context/AppContext'
+import {useAPPContext} from '../context/AppContext'
 import { assets, JobCategories, JobLocations, jobsData } from '../assets/assets'
 import { JobCard } from './jobCard'
 
 export const JobListing = () => {
-    const {isSearched,searchFilter,setSearchFilter} = useContext(AppContext)
+    const {isSearched,searchFilter,setSearchFilter} = useAPPContext()
     return (
         <div className='container 2xl:px-20 mx-auto flex flex-col lg:flex-row max-lg:space-y-8 py-8'> 
             {/* Sidebar */}

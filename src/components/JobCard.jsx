@@ -8,7 +8,7 @@ export const JobCard = ({job}) => {
     }
     
     return (
-        <div className='border p-6  rounded-md border-gray-300 shadow-sm sm:p-6'>
+        <div className='border p-6   border-gray-300 shadow-sm sm:p-6  bg-white rounded-xl overflow-hidden  hover:shadow-md transition-all duration-300 hover:-translate-y-1 '>
             <div className='flex justify-between items-center'>
                 <img className='h-8' src={assets.company_icon} alt="Logo de l'entreprise" />
             </div>

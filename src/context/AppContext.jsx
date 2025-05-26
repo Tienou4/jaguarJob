@@ -1,9 +1,9 @@
-import { createContext , useEffect, useState } from "react"
+import { createContext , useContext, useEffect, useState } from "react"
 import { jobsData } from "../assets/assets";
 
-export const AppContext = createContext();
+    export const AppContext = createContext();
 
-export const AppContextProvider = (props)=>{
+    export const AppContextProvider = (props)=>{
     const [searchFilter,setSearchFilter] = useState(
         {
             title:'',
@@ -34,4 +34,8 @@ export const AppContextProvider = (props)=>{
             {props.children}
         </AppContext.Provider>
     )
+}
+
+export const useAPPContext = ()=>{
+    return useContext(AppContext)
 }
